@@ -1,0 +1,18 @@
+<div class="post-edit">
+  <div class="theme-edit-group">
+    <div class="theme-edit">
+      <h2>編集する</h2>
+    </div>
+    <%= form_tag("/posts/#{@post.id}/update") do %>
+    <div class="content-edit">
+      <% @post.errors.full_messages.each do |message| %>
+        <div class="form-error">
+          <%= message %>
+        </div>
+      <% end %>
+      <textarea name="content" rows="4"><%= @post.content %></textarea>
+      <input type="submit" value="保存">
+    </div>
+    <% end%>
+  </div>
+</div>

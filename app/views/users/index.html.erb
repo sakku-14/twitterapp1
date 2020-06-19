@@ -1,0 +1,17 @@
+<div class="users-index">
+  <div class="theme-users">
+    <h2>ユーザー一覧</h2>
+  </div>
+  <div class="users">
+      <% @users.each do |user|%>
+      <div class="user">
+        <div class="user-left">
+          <%= image_tag("/user_image/#{user.image_name}") %>
+        </div>
+        <div class="user-right">
+          <%= link_to(user.name,"/users/#{user.id}") %>
+        </div>
+      </div>
+      <% end %>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="user-show">
+  <div class="user-show-detail">
+      <%= image_tag("/user_image/#{@user.image_name}") %>
+      <p class="user-name"><%= @user.name %></p>
+      <p class="user-email"><%= @user.email %></p>
+      <% if @current_user.id == @user.id %>
+        <%= link_to("

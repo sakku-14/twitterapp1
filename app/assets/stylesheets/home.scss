@@ -1,0 +1,153 @@
+/*全体共通*/
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: pink;
+}
+
+h2{
+  font-size: 60px;
+}
+
+/* ヘッダー(共通) */
+ul, li{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header{
+  height: 64px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+
+.header-logo{
+  float:left;
+}
+
+.header-logo a{
+  font-size: 22px;
+  padding-left: 20px;
+  line-height: 64px;
+  color: white;
+}
+
+.header-menu {
+  padding-right: 20px;
+  float:right;
+}
+
+.header-menu ul{
+}
+
+.header-menu li{
+  display: inline-block;
+  font-size: 13px;
+  line-height: 64px;
+  padding-left: 15px;
+  color: white;
+}
+
+.header-menu a{
+  color: white;
+}
+
+/* 成功メッセージ */
+.success-message{
+  position: absolute;
+  top: 64px;
+  background-color: #FF6600;
+  color: white;
+  height: 35px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  line-height: 35px;
+}
+
+/* トップページ */
+
+.top-main {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-image: url("/top.jpg");
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding-top: 200px;
+}
+
+.top-message {
+  margin: auto;
+
+}
+
+.top-message h2{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+
+.top-message p{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* aboutページ */
+.about-main {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: pink;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  height: auto;
+}
+
+.about-message{
+  margin: 0 100px;
+}
+
+.about-message h2{
+  font-size: 60px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-message p{
+  font-size: 20px;
+  color: white;
+}
+
+.about-img{
+  margin: 0 100px;
+}
+
+.about-img img{
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+/*    スペース用    */
