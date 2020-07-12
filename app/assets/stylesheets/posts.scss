@@ -42,6 +42,7 @@
   height: 70px;
   width: 70px;
   border-radius: 35%;
+  object-fit: cover;
 }
 
 .post-right{
@@ -68,6 +69,23 @@
   margin: 10% 20%;
   box-shadow: 0 2px 6px #c1ced7;
   padding: 30px;
+}
+
+.post-show-detail .user-content{
+  display: flex;
+  align-items: center;
+
+  img{
+    height: 70px;
+    width: 70px;
+    border-radius: 35%;
+    object-fit: cover;
+  }
+  a{
+    color: black;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
 }
 
 .post-show-detail .post-content{

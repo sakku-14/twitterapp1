@@ -1,5 +1,9 @@
 <div class="post-show">
   <div class="post-show-detail">
+    <div class="user-content">
+      <%= image_tag("/user_image/#{@post.user.image_name}") %>
+      <%= link_to(@post.user.name,"/users/#{@post.user.id}", class: "user-name") %>
+    </div>
     <div class="post-content">
       <%= @post.content %>
     </div>
